@@ -24,6 +24,7 @@
     "test": "node_modules/lab/bin/lab -t 100 -C -S -v -a code -L"
   },
   "dependencies": {
+    "joi": "^8.0.4",
     "kue": "^0.10.5"
   }
 }
