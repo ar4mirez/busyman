@@ -1,0 +1,29 @@
+{
+  "name": "busyman",
+  "description": "Manager/Worker system with multiple providers (redis, rabbitmq, aws).",
+  "version": "1.0.0",
+  "author": "Angel Ramirez <angel@cuemby.com>",
+  "devDependencies": {
+    "code": "^2.1.1",
+    "eslint": "^2.4.0",
+    "eslint-config-hapi": "^9.1.0",
+    "eslint-plugin-hapi": "^4.0.0",
+    "fixpack": "^2.3.0",
+    "lab": "^10.3.0"
+  },
+  "keywords": [
+    "manager",
+    "queue",
+    "task",
+    "worker"
+  ],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "scripts": {
+    "fix": "node_modules/.bin/fixpack",
+    "test": "node_modules/lab/bin/lab -t 100 -C -S -v -a code -L"
+  },
+  "dependencies": {
+    "kue": "^0.10.5"
+  }
+}
